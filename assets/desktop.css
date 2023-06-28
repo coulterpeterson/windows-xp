@@ -86,6 +86,32 @@ body {
     transition-duration: 0.1s;
 }
 
+.window.notepad {
+    max-width: 500px;
+    max-height: 400px;
+    top: 30%;
+    left: 25%;
+}
+
+.window.ie {
+    max-width: 760px;
+    max-height: 520px;
+    top: 40%;
+    left: 70%;
+}
+
+.ie-top-bar {
+    width: 100%;
+}
+.ie-content {
+    width: 100%;
+    height: 100%;
+    max-height: 405px;
+    margin-top: 112px;
+    max-width: 758px;
+    margin-left: 1px;
+}
+
 .window.maximized {
     top: 0;
     left: 0;
@@ -318,3 +344,5 @@ textarea {
         display: none;
     }
 }
+
+

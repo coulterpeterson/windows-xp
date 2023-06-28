@@ -93,3 +93,6 @@ Translation: _Ofcourse you can use this for you project! Just make sure to say w
 ## Acknowledgement
 
 This simulation of the windows-XP is made purely for educational purpose and not for any kind of personal profiteering. I don't own it neither do I have any links to it at the moment. All rights reserved to windows-XP are to Microsoft &copy;.
+
+## Portfolio Notes
+* `eval "$(ssh-agent -s)" && ssh-add ~/.ssh/coulterpetersonwebsite`

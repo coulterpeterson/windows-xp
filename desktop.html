@@ -9,35 +9,35 @@
 
 <body>
     <div class="desktop">
-        <div class="icon faisal-akhtar">
+        <div class="icon coulter-peterson faisal-akhtar">
             <img src="assets/documents.png">
-            <div class="icon-name">Faisal Akhtar</div>
+            <div class="icon-name">Coulter Peterson</div>
         </div>
         <div class="icon my-computer">
             <img src="assets/computer.png">
-            <div class="icon-name">My Computer</div>
+            <div class="icon-name">My Computer (GIT)</div>
         </div>
         <div class="icon my-network">
             <img src="assets/network.png">
-            <div class="icon-name">My Network</div>
+            <div class="icon-name">My Network (LI)</div>
         </div>
         <div class="icon note-pad">
             <img src="assets/notepad.png">
             <div class="icon-name">ReadME.txt</div>
         </div>
-        <div class="icon recycle-bin">
+        <div class="icon recycle-bin" onclick="play()">
             <img src="assets/recycle.png">
             <div class="icon-name">Recycle Bin</div>
         </div>
     </div>
 
-    <div class="window">
+    <div class="window notepad">
         <div class="title-bar">
             <div><img src="assets/notepad.png"> ReadME.txt</div>
             <div class="controls">
                 <button class="cls"></button>
-                <button class="max"></button>
-                <button class="min"></button>
+                <!--<button class="max"></button>
+                <button class="min"></button>-->
             </div>
         </div>
         <div class="menu-bar">
@@ -50,19 +50,48 @@
         <textarea></textarea>
     </div>
 
+    <div class="window ie">
+        <div class="title-bar">
+            <div><img src="assets/ie-logo.png"> Internet Explorer</div>
+            <div class="controls">
+                <button class="cls"></button>
+                <!--<button class="max"></button>
+                <button class="min"></button>-->
+            </div>
+        </div>
+        <!--<div class="menu-bar">
+            <span>File</span>
+            <span>Edit</span>
+            <span>Format</span>
+            <span>View</span>
+            <span>Help</span>
+        </div>-->
+        <img class="ie-top-bar" src="/xp/assets/IE_bar.jpg" />
+        <iframe class="ie-content" src="https://coulterpeterson.com"></iframe>
+    </div>
+
     <div class="taskbar">
-        <div class="start-button"><img src="assets/logo.svg"> start</div>
+        <div class="start-button" onclick="play()"><img src="assets/logo.svg"> start</div>
 
         <div class="opened-tabs">
-            <div class="open-tab" onclick="window.open('https://faisalakhtar.github.io/')"><img src="assets/documents.png"> Faisal Akhtar</div>
-            <div class="open-tab" onclick="window.open('https://github.com/faisalAkhtar/')"><img src="assets/computer.png"> My Computer</div>
-            <div class="open-tab" onclick="window.open('https://twitter.com/faisallakhtarr/')"><img src="assets/network.png"> My Network</div>
+            <div class="open-tab" onclick="window.open('https://coulterpeterson.com')"><img src="assets/documents.png"> Coulter Peterson</div>
+            <div class="open-tab" onclick="window.open('https://github.com/coulterpeterson/')"><img src="assets/computer.png"> My Computer (GIT)</div>
+            <div class="open-tab" onclick="window.open('https://www.linkedin.com/in/coulterpeterson/')"><img src="assets/network.png"> My Network (LI)</div>
             <div class="open-tab readme active"><img src="assets/notepad.png"> ReadME.txt</div>
         </div>
 
+        <!--<div onclick="play()"><img src="/xp/assets/speaker.png" /></div>-->
         <div class="time">11:20 PM</div>
     </div>
 
-    <script src="assets/desktop.js"></script>
+    <script src="assets/desktop.js?v=1.0.0"></script>
+    <script>
+        function play() {
+            var audio = document.getElementById("welcome-audio");
+            audio.play();
+        }
+    
+      </script>
+      <audio id="welcome-audio" src="/xp/assets/winxp.mp3" preload="auto"></audio>
 </body>
 </html>
